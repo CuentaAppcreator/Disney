@@ -41,10 +41,10 @@
     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
   </div>
 
-  <!-- Contenido -->
+
   <div class="relative z-10">
 
-    <!-- Header -->
+  
     <header id="main-header" class="pt-3 pb-3 px-4 sm:pt-4 sm:pb-4 sm:px-6 flex items-center space-x-3 sm:space-x-4 text-white">
       <a href="javascript:window.history.back();" aria-label="Volver" class="text-white text-2xl sm:text-3xl flex-shrink-0">
         <i class="fas fa-chevron-left"></i>
@@ -58,7 +58,6 @@
 
       <div class="flex-1"></div>
 
-      <!-- Recomendadas aparece solo al hacer scroll -->
       <button id="header-recomendadas" class="opacity-0 transition-opacity duration-300 border border-white rounded-full px-3 py-1 text-xs sm:text-sm flex items-center space-x-1 whitespace-nowrap">
         <i class="fas fa-random"></i> <span>Aleatorio</span>
       </button>
@@ -66,18 +65,17 @@
 
     <main class="px-4 sm:px-6 pb-6 pt-14 max-w-7xl mx-auto">
 
-      <!-- Título y botón aleatorio -->
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-3 gap-2 sm:gap-0">
-        <h1 id="main-title" class="text-2xl sm:text-3xl font-normal break-words max-w-full">Disney+</h1>
-        <button id="btn-recomendadas" class="border border-white rounded-full px-3 py-1 text-sm flex items-center whitespace-nowrap">
-          <i class="fas fa-random"></i>
-        </button>
-      </div>
+     <div class="flex justify-between items-center mb-3">
+    <h1 id="main-title" class="text-3xl font-normal">Disney+</h1>
+    <button id="btn-recomendadas" class="border border-white rounded-full px-3 py-1 text-sm flex items-center">
+      <i class="fas fa-random"></i>
+    </button>
+  </div>
 
-      <!-- Descripción -->
+    
       <p id="description" class="text-white text-base mb-4 max-w-xl leading-relaxed">
-        Una plataforma. Diversión para todos.
-Disney+ tiene contenido para cada miembro de la familia: desde princesas y aventuras animadas hasta superhéroes, galaxias lejanas y exploraciones del mundo real.
+        Una plataforma. Diversion para todos.
+Disney+ tiene contenido para cada miembro de la familia: desde princesas y aventuras animadas hasta superheroes, galaxias lejanas y exploraciones del mundo real.
       </p>
 
       <!-- Total -->
@@ -87,7 +85,7 @@ Disney+ tiene contenido para cada miembro de la familia: desde princesas y avent
         <div class="border-b border-white w-16"></div>
       </div>
 
-  <!-- Contenedor de carteles -->
+ 
   <div id="posters-grid" class="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,_minmax(140px,_1fr))] gap-3 mt-3">
     <!--PEGAR CONTENIDO AQUI ABAJO-->
 
@@ -495,7 +493,7 @@ Disney+ tiene contenido para cada miembro de la familia: desde princesas y avent
 
     observer.observe(description);
 
-    // Función para mezclar elementos aleatoriamente
+  
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
